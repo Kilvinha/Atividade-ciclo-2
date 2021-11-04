@@ -1,0 +1,3 @@
+def calculo_distancia(tempo,metros)
+print(tempo//metros)
+calculo_distancia(tempo = 60, metros=10)
