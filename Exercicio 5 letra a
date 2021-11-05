@@ -2,4 +2,4 @@ def qual seu nome():
 global nome
 nome = input("escreva seu nome")
 print('Este é seu"'+nome+'"')
-return nome 
+  return nome 
