@@ -1,0 +1,8 @@
+dias = int(input("idade em dias"))
+anos = ceil(dias//365)
+meses = ceil(dias%365)
+anos = ceil(dias//30)
+meses = ceil(dias%30)
+print("idade em anos",anos)
+print("idade em meses",meses)
+print("idade em dias",dias)
