@@ -1,6 +1,6 @@
-a = int(input("digita o lado a"))
-b = int(input("digita o lado b"))
-c= int(input("digita o lado c"))
+a = int(input("digita o lado a:"))
+b = int(input("digita o lado b:"))
+c= int(input("digita o lado c:"))
 if a>b+c;
 print('não forma triangulo')
 if a<b+c;
