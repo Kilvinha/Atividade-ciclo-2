@@ -4,5 +4,6 @@ c= int(input("digita o lado c"))
 if a>b+c;
 print('não forma triangulo')
 if a<b+c;
-print('a area é{}.format')
+else:
+print('a area é{}.format',(a*(b+c)//2))
 
