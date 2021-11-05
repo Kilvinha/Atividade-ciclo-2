@@ -1,0 +1,5 @@
+Primeiro = int(input("Primeiro numero:"))
+Segundo = int(input("Segundo numero:"))
+Terceiro = int(input("Terceiro numero:"))
+numeros=[primeiro,segundo,terceiro]
+print("o menor valor digitado foi{}.format(min(numeros)))
