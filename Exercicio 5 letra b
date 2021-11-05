@@ -1,0 +1,5 @@
+txo="Varginha terra do et"
+print(txo[::-1])
+def inverter(txo):
+return txo[::-1]
+print(inverter("esse aqui tambem"))
