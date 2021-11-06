@@ -1,0 +1,20 @@
+num = input("escreva o numero: ")
+num = int(num)
+div = 2
+primo = True
+mini = num/2
+
+while div <= mini:
+if num%div == 0:
+primo = False
+print("É divide por: ", div)
+div += 1
+if num <= 1:
+primo = False
+
+if primo == True:
+print(" primo")
+else:
+print("Não é primo")
+ for num in range(0,101):
+     primo(numero)
