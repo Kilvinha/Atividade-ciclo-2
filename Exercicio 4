@@ -1,20 +1,17 @@
-num = input("escreva o numero: ")
-num = int(num)
-div = 2
-primo = True
-mini = num/2
+n = int(input("digite um numero: "))
+cont = 0
+i = 0
 
-while div <= mini:
-if num%div == 0:
-primo = False
-print("É divide por: ", div)
-div += 1
-if num <= 1:
-primo = False
+while i <= n or cont < 2:
+i = i + 1
+x = n % i
+if x == 0:
+cont = cont + 1
 
-if primo == True:
-print(" primo")
-else:
-print("Não é primo")
+if cont <= 2:
+print("primo")
+  else:
+
+print("nao primo")
  for num in range(0,101):
-     primo(numero)
+     primo(n)
