@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+import  sqlite3
+con = sqlite3.connect("calculo do imc-indice de massa corporal.db")
+cur = con.cursor()
+sql = "creat table imc" /
+   ' (id integer primary key, '/
+   'nome varchar(100),'/
+   'imc(varchar(100))'
+cur.execute(sql)
+con.close()
