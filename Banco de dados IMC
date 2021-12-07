@@ -1,10 +1,33 @@
-# -*- coding: utf-8 -*-
-import  sqlite3
-con = sqlite3.connect("calculo do imc-indice de massa corporal.db")
-cur = con.cursor()
-sql = "creat table imc" /
-   ' (id integer primary key, '/
-   'nome varchar(100),'/
-   'imc(varchar(100))'
-cur.execute(sql)
-con.close()
+# -*- coding: latin1 -*-
+from sqlalchemy import *
+db = creat_engine("sqlite:// imc.db")
+metadata = metadata(db)
+metada.bind.echo = true
+prog table = table ("imc",metadata,
+             column("imc_id,integer,primary_key=true),
+             column("altura"= , float(100),
+             column("peso"= , float(100))))
+imc_table.creat()
+def calculo imc()
+imc=peso/(altura*altura)
+imc_table=table("imc",metadata, autoload=true)
+i=imc_table.insert()
+i.execute({"altura:coloque sua altura"),("peso:coloque seu peso")
+i.execute ({  imc=peso/(altura*altura)
+    if imc < 17:
+       print = "muito abaixo do peso"
+    elif imc < 18.49: 
+       print = "abaixo do peso"
+    elif imc < 24.99:
+       print = "peso normal"
+    elif imc <29.99:
+       print = "acima do peso"
+    elif imc <34.99:
+       print = "obesidade1"
+    elif imc <39.99:
+       print = "obesidade 2 severa"
+    else:
+       print = "obesidade 3 morbida"
+    return  calculo imc})
+s = imc_table.select()
+r = s.execute()
